@@ -1,7 +1,7 @@
 @import 'carbon-components/scss/globals/scss/styles.scss';
 @import './components/TutorialHeader/tutorial-header.scss';
-@import './content/LandingPage/landing-page.scss';
-@import './content/RepoPage/repo-page.scss';
+// @import './content/LandingPage/landing-page.scss';
+// @import './content/RepoPage/repo-page.scss';
 /* Remove overrides once Carbon bugs are fixed upstream. */
 
 /*
@@ -12,3 +12,86 @@ The React <Content /> component uses the `main` element which IE11 doesn't recog
 // main {
 //   display: block;
 // }
+
+.deploy_main {
+  overflow: hidden;
+  width: 100%;
+  display: table;
+}
+.side_content {
+  // border:1px solid rgb(20, 228, 20);
+  padding-top: 10px;
+  float: left;
+  min-height: 405px;
+  // border-right: 1px solid gray;
+  padding-right: 50px;
+}
+
+.side_key {
+  margin-bottom: 10px;
+  @include carbon--type-style('productive-heading-02');
+}
+
+.side_key_info {
+  @include carbon--type-style('body-short-01');
+  color: blue;
+}
+
+.deploy_content {
+  position: relative;
+  // padding-top: 10px;
+  // border:1px solid blue;
+}
+
+.deploy_content_title {
+  @include carbon--type-style('body-long-02');
+}
+
+.deploy_content_steps {
+  overflow: visible;
+}
+
+.deploy_c_step1 {
+  overflow: hide;
+  // border-top: 1px solid rgb(158, 162, 165);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  height: 90px;
+}
+
+.deploy_c_step2 {
+  overflow: hide;
+  // border-top: 1px solid rgb(158, 162, 165);
+  height: 90px;
+  padding-bottom: 10px;
+}
+
+.deploy_c_step3 {
+  overflow: visible;
+  // border: 1px solid rgb(158, 162, 165);
+  height: 90px;
+  padding-bottom: 10px;
+}
+
+.step_area_banner {
+  float: left;
+
+  // border-right: 1px solid rgb(224, 210, 15);
+}
+
+.step_area_info {
+  float: left;
+  width: 150px;
+  border: 1px solid rgb(224, 210, 15);
+}
+
+.step_area_selector {
+  float: left;
+  // border: 1px solid rgb(85, 20, 236);
+}
+
+.step_area_status {
+  float: left;
+  padding-left: 20px;
+  // border-right: 1px solid rgb(138, 10, 116);
+}
